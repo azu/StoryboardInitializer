@@ -1,6 +1,8 @@
 # StoryboardInitializer
 
-Simple Storyboard instantiateViewControllerWithIdentifier: utility.
+Simple Storyboard utility.
+
+It is handling ``instantiateViewControllerWithIdentifier:``.
 
 ## Installation
 
