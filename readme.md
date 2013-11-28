@@ -1,6 +1,8 @@
 # StoryboardInitializer
 
-git
+Simple Storyboard utility.
+
+It is handling ``instantiateViewControllerWithIdentifier:``.
 
 ## Installation
 
