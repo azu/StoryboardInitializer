@@ -10,15 +10,19 @@
 
 - (id)instanceWithClass:(Class) viewControllerClass {
     NSString *identifier = NSStringFromClass(viewControllerClass);
+    id instance;
 #if DEBUG
     @try {
-        [self instantiateViewControllerWithIdentifier:identifier];
+        instance = [self instantiateViewControllerWithIdentifier:identifier];
     } @catch (NSException *exception) {
         NSLog(@"'%@' does not exist in the storyboard.", identifier);
         NSLog(@"StoryboardInitializer Exception : %@", exception);
+        @throw exception;
     }
+#else
+    instance = [self instantiateViewControllerWithIdentifier:identifier];
 #endif
-    return [self instantiateViewControllerWithIdentifier:identifier];
+    return instance;
 }
 
 
