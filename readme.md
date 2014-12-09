@@ -7,7 +7,7 @@ It is handling ``instantiateViewControllerWithIdentifier:``.
 ## Installation
 
 ```ruby
-pod 'StoryboardInitializer', :git => 'https://github.com/azu/StoryboardInitializer'
+pod 'StoryboardInitializer'
 ```
 
 ## Usage
